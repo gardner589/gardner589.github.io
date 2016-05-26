@@ -9,4 +9,23 @@ font-style:inherit;
 text-decoration:inherit;
 line-height:inherit;
 color:inherit;
+box-sizing: border-box;
+}
+
+#face{
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%vh;
+}
+
+#face img{
+/*  margin: 0 auto;*/
+  width: 250px;
+  border-radius: 50%;
+
 }
