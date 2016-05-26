@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
 *{
 font-size:inherit;
 font-weight:inherit;
@@ -16,6 +18,11 @@ display: flex;
 justify-content: center;
   }
 nav{
+  font-family: Dosis;
+  letter-spacing: 2px;
+  color:#FAEFD1;
+  border-image: url(Spidey_SonyWonder.jpg) 30 round;
+  text-shadow: 3px 3px 3px maroon;
 
 }
 
@@ -33,13 +40,30 @@ text-decoration: none;
 }
 
 section{
-  line-height: 2;
   text-align: center;
   height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+header p{
+font-family: Dosis;
+color: maroon;
+font-size: 20px;
+letter-spacing: 3px;
+}
+header h1{
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-family: Dosis;
+  color: #C2FFEA;
+  box-shadow: 5px 5px 300px 40px aquaMarine;
+border-radius: 50%;
+background-color: #BAFFE8;
+background-position: center;
+text-shadow: 2px 2px 1px maroon;
 }
 #face{
 width: 500px;
@@ -52,5 +76,8 @@ justify-content: space-around;
 #face img{
   width: 250px;
   border-radius: 50%;
+  background-image: url(Spidey_SonyWonder.jpg);
+  background-size: 255px;
+  overflow: visible;
 
 }
