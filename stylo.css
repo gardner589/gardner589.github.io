@@ -14,16 +14,23 @@ html{
   min-width: 100vw;
 }
 body{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
 display: flex;
 justify-content: center;
+background-color: #E1E1E1;
+border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
   }
 nav{
   font-family: Dosis;
   letter-spacing: 2px;
-  color:#FAEFD1;
-  border-image: url(Spidey_SonyWonder.jpg) 30 round;
-  text-shadow: 3px 3px 3px maroon;
-
+  color:#fff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
 }
 
 ul{
@@ -35,8 +42,12 @@ ul{
   text-decoration: none;
   list-style-type: none;
 }
-li{
+ul li{
+text-shadow: 3px 5px 10px grey;
 text-decoration: none;
+font-weight: 200;
+font-size: 20px;
+/*transition: text-shadow .5s;*/
 }
 
 section{
@@ -47,37 +58,77 @@ section{
   align-content: center;
   align-items: center;
 }
+
 header p{
 font-family: Dosis;
 color: maroon;
 font-size: 20px;
 letter-spacing: 3px;
 }
+
 header h1{
+  width: 100%;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 4px;
   font-family: Dosis;
-  color: #C2FFEA;
-  box-shadow: 5px 5px 300px 40px aquaMarine;
-border-radius: 50%;
-background-color: #BAFFE8;
-background-position: center;
-text-shadow: 2px 2px 1px maroon;
+  color: #ccc;
+  border-left: 0;
+  border-right: 0;
+  text-shadow: 8px 4px 8px white;
 }
+
 #face{
 width: 500px;
-/*outline: 2px solid aquaMarine;*/
+height: 60vh;
 padding: 5px;
-justify-content: space-around;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+}
+#bholder{
+  width:500px;
+  height: 90px;
+  justify-content: space-around;;
+  align-self: center;
+  overflow-y: scroll;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
+}
+#bio {
+
+  text-align: center;
+}
+#bio p{
+  justify-content: center;
+  align-self: center;
+  font-family: Dosis;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-shadow: 5px 5px 20px maroon;
+}
+#bio p:hover{
+
+
 }
 
-
 #face img{
-  width: 250px;
-  border-radius: 50%;
-  background-image: url(Spidey_SonyWonder.jpg);
-  background-size: 255px;
-  overflow: visible;
 
+  width: 100px;
+  border-radius: 50%;
+  transition: transform .2s, box-shadow 2s, border-radius 1s, src 1s,border 1s;
+}
+#face img:hover{
+  box-shadow: -5px 0px 100px 2px maroon;
+  transform: rotate(8640deg);
+  border-radius: 4%;
+  border: .5px solid white;
+
+}
+ul li:hover{
+  text-shadow: 5px 5px 20px maroon;
 }
