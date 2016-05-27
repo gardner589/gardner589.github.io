@@ -90,7 +90,8 @@ margin-top: 40px;
 #bholder{
   width:500px;
   height: 120px;
-  justify-content: space-around;;
+  flex-direction: row;
+  justify-content: space-around;
   align-self: center;
   overflow-y: scroll;
   border-bottom: 0;
