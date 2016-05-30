@@ -10,48 +10,47 @@ color:inherit;
 text-decoration: none;
 }
 html{
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 body{
-  height: 100vh;
-  width: 95vw;
+//  position: fixed;
+ height: auto;
+//  width: 95vw;
   bottom: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #E1E1E1;
-  border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
+  background-color: black; //#3D3D47;
+//outline: 2px solid red;
   }
 nav{
-  width: 60vw;
+  width: 100vw;
   font-family: Dosis;
   letter-spacing: 2px;
   margin: auto;
   color:#fff;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 2px solid white;
-  //background-clip:content-box;
-  border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
-}
+
+    background: url(Images/IMG_3712.JPG) repeat fixed 100%;
+  }
 
 ul{
-  width: 50vw;
-  height: 5vh;
+  //width: 50vw;
+  //height: 5vh;
   text-decoration: none;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 ul li{
-text-shadow: 3px 5px 10px grey;
+text-shadow: 3px 5px 10px black;
 text-decoration: none;
 font-size: 20px;
 /*transition: text-shadow .5s;*/
@@ -59,27 +58,28 @@ font-size: 20px;
 
 section{
   text-align: center;
-  height: 100%;
-
+  //height: 100%;
 }
+
 
 header p{
 font-family: Dosis;
-color: maroon;
+color: aquaMarine;
 font-size: 20px;
 letter-spacing: 3px;
 }
 
 header h1{
-  width: 100%;
+  //width: 100%;
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 4px;
   font-family: Dosis;
   color: #ccc;
-  border-left: 0;
-  border-right: 0;
-  text-shadow: 8px 4px 8px white;
+  text-shadow: 8px 4px 8px aquaMarine;
+}
+header{
+
 }
 
 #face{
@@ -88,22 +88,25 @@ height: 60vh;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color: black; //#3D3D47;
+
 }
 #bholder{
-  width:60vw;
-  height: 10vh;
+  width:100vw;
+//  height: 10vh;
   justify-content: space-around;
   align-self: center;
   margin: auto;
   /*overflow-y: scroll;*/
-  border-bottom: 0;
-  border-left: 0;
-  border-right: 0;
-  border-image: url(Spidey_SonyWonder.jpg) 0.5 round;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-position: 0;
+  background: url(Images/IMG_3712.JPG) repeat fixed 100%;
 }
 #bio {
 
   text-align: center;
+  background-color: black; // #3D3D47;
 }
 #bio p{
   justify-content: center;
@@ -112,7 +115,8 @@ align-items: center;
   color: white;
   font-size: 20px;
   letter-spacing: 3px;
-  text-shadow: 5px 5px 20px maroon;
+  text-shadow: 5px 5px 20px aquaMarine;
+  position: sticky;
 }
 #bio p:hover{
 
@@ -126,12 +130,12 @@ align-items: center;
   transition: transform .2s, box-shadow 2s, border-radius 1s, src 1s,border 1s;
 }
 #face img:hover{
-  box-shadow: -5px 0px 100px 2px maroon;
+  box-shadow: -5px 0px 100px 2px aquaMarine;
   transform: rotate(8640deg);
   border-radius: 4%;
-  border: .5px solid white;
+  border: .5px solid aquaMarine;
 
 }
 ul li:hover{
-  text-shadow: 5px 5px 20px maroon;
+  text-shadow: 5px 5px 20px aquaMarine;
 }
