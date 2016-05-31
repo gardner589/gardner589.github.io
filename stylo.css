@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis);
 
+/* AM: Pay attention to indentation. Being consistent and clear goes a long way in code readability and will benefit you greatly during and after GA. */
+
 *{
 font-size:inherit;
 font-weight:inherit;
@@ -17,6 +19,7 @@ html{
   flex-direction: column;
 }
 body{
+  /* AM: You can't use javascript-style comments (i.e., double slash) in CSS. Look at how I wrote this one! */
 //  position: fixed;
  height: auto;
 //  width: 95vw;
@@ -35,6 +38,7 @@ nav{
   margin: auto;
   color:#fff;
 
+  /* AM: You need quotation marks around the image path. */
     background: url(Images/IMG_3712.JPG) repeat fixed 100%;
   }
 
