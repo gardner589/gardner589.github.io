@@ -116,7 +116,7 @@ background-color: black;
   font-size: 20px;
   letter-spacing: 3px;
   text-shadow: 5px 5px 20px aquaMarine;
-  position: sticky;
+  /*position: sticky;*/
 }
 #bio p:hover{
 
