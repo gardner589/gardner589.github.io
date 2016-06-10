@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>ProTfolio</title>
-    <link rel="stylesheet" href="stylo.css"/>
-    <script src="jquery-1.12.4.min.js"></script>
+    <!--<link rel="stylesheet" href="stylo.css"/>-->
+    <link rel="stylesheet" href="stiles.css"/>
+  <script src="jquery-1.12.4.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -12,19 +13,25 @@
       <li><a href="#bio">About</a></li>
       <li><a href="#">Past</a></li>
       <li><a href="#"> 5yrs</a></li>
-      <li><a href="#">Skillz</a></li>
+      <li><a href="http://gardner589.github.io/ProjectOne" target="_blank">Skillz</a></li>
     </ul>
   </nav>
-  <section id="face">
 
+  <section id="face">
     <header>
       <img src="profpic.jpg" alt="My picure of my face"/>
       <h1 >Christopher T. Gardner</h1>
       <p>Developing Full-Stack Developer</p>
     </header>
-
   </section>
+
+  <div id="flexbox-background">
+    <p>The <code>Flexbox Layout</code> (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").</p>
+    <p><strong>Note:</strong> Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the <a href="http://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a> layout is intended for larger scale layouts.
+</div>
+
   <section id="bholder">
+
   <div id="bio">
     <p>Anakin Skywalker was a Force-sensitive human male who served the Galactic
       Republic as a Jedi Knight, and later the Galactic Empire as the
@@ -34,6 +41,9 @@
       who freed Anakin from slavery and brought the boy into their community;
       hailing Skywalker as the Chosen One of Jedi prophecy, destined to defeat
       the Sith and bring balance to the Force.</p>
+
+      <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
+      <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.). </p>
   </div>
 </section>
 

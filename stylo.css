@@ -15,6 +15,8 @@ html{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: url('Images/IMG_3712.JPG') repeat fixed 100%;
+
 }
 body{
 /* position: fixed;*/
@@ -25,17 +27,16 @@ body{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: black; //#3D3D47;
-/*outline: 2px solid red;*/
+  /*background-color: black; //#3D3D47;*/
+  /*outline: 2px solid red;*/
   }
 nav{
-  width: 100vw;
+  width: 100%;
   font-family: Dosis;
   letter-spacing: 2px;
   margin: auto;
   color:#fff;
-
-    background: url(Images/IMG_3712.JPG) repeat fixed 100%;
+  /*background: url(Images/IMG_3712.JPG) repeat fixed 100%;*/
   }
 
 ul{
@@ -70,7 +71,6 @@ letter-spacing: 3px;
 }
 
 header h1{
-  /*width: 100%;*/
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -78,48 +78,46 @@ header h1{
   color: #ccc;
   text-shadow: 8px 4px 8px aquaMarine;
 }
-header{
-
-}
 
 #face{
-/*width: 500px;*/
-height: 60vh;
+min-width: 100%;
+/*height: 60vh;*/
+padding: 5% 0;
 display: flex;
 justify-content: center;
-align-items: center;
+/*align-items: center;*/
 background-color: black;
-
 }
+
+header{
+width: 100%;
+}
+
 #bholder{
   width:100vw;
-  /*height: 10vh;*/
-  justify-content: space-around;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  /*overflow-y: scroll;*/
   padding-top: 20%;
   padding-bottom: 20%;
   background-position: 0;
-  background: url(Images/IMG_3712.JPG) repeat fixed 100%;
 }
 #bio {
-
+  /*display: flex;*/
   text-align: center;
   background-color: black;
 }
 #bio p{
   justify-content: center;
-  align-self: center;
   font-family: Dosis;
   color: white;
   font-size: 20px;
   letter-spacing: 3px;
+  width: 75%;
+  //outline: 2px solid red;
   text-shadow: 5px 5px 20px aquaMarine;
-  /*position: sticky;*/
 }
 #bio p:hover{
-
 
 }
 
