@@ -114,7 +114,7 @@ width: 100%;
   font-size: 20px;
   letter-spacing: 3px;
   width: 75%;
-  outline: 2px solid red;
+  //outline: 2px solid red;
   text-shadow: 5px 5px 20px aquaMarine;
 }
 #bio p:hover{
