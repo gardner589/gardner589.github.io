@@ -5,7 +5,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #888;
+  background: #999;
   font-family: fantasy;
   color: #444;
 }
@@ -29,9 +29,9 @@ li a {
 #face {
   width: 100%;
   text-align: center;
-  background: url('Images/FullSizeRender (3).jpg') 100% fixed;
+  background: url('profpic.jpg') fixed;
   color: white;
-  text-shadow: 4px 4px 4px #428BCA;
+  text-shadow: 4px 4px 4px #222;
   padding-top: 80px;
   margin-top: 60px;
 }
