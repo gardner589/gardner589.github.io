@@ -6,10 +6,13 @@ body {
   width: 100vw;
   height: 100vh;
   background: #888;
-  /*font-family: cursive;*/
+  font-family: fantasy;
   color: #444;
 }
 
+.jumbotron{
+  box-shadow: .5px 2px 20px white;
+}
 .well{
   background-color: #222;
   text-shadow: 1px 1px 1px white;
