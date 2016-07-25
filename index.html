@@ -2,22 +2,30 @@
 <html>
 <head>
   <title>ProTfolio</title>
+  <!-- <script src="jquery-1.12.4.min.js"></script> -->
     <!--<link rel="stylesheet" href="stylo.css"/>-->
-    <link rel="stylesheet" href="stiles.css"/>
-  <script src="jquery-1.12.4.min.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="stiles.css"/> -->
+    <link rel="stylesheet" href="styloRen.css"/>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="script.js"></script>
 </head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="#bio">About</a></li>
-      <li><a href="#">Past</a></li>
-      <li><a href="#"> 5yrs</a></li>
-      <li><a href="http://gardner589.github.io/ProjectOne" target="_blank">Skillz</a></li>
+<body class="container">
+  <nav class="navbar-fixed-top navbar-dark bg-info container-fluid">
+    <ul class="nav navbar-nav container-fluid">
+      <li class="pull-left"><a href="#bio">About</a></li>
+      <li class="pull-left"><a href="#">Past</a></li>
+      <li class="pull-right"><a href="#"> 5yrs</a></li>
+      <li class="pull-right"><a href="http://gardner589.github.io/ProjectOne" target="_blank">Skillz</a></li>
     </ul>
   </nav>
 
-  <section id="face">
+  <section class="container-fluid jumbotron " id="face">
     <header>
       <img src="profpic.jpg" alt="My picure of my face"/>
       <h1 >Christopher T. Gardner</h1>
@@ -25,27 +33,30 @@
     </header>
   </section>
 
-  <div id="flexbox-background">
+<div class="container-fluid col-md-12">
+  <div class="col-md-5 well" id="flexbox-background">
     <p>The <code>Flexbox Layout</code> (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").</p>
     <p><strong>Note:</strong> Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the <a href="http://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a> layout is intended for larger scale layouts.
+  </div>
+  <section class="col-md-7 well" id="bholder">
+    <div id="bio">
+      <p>Anakin Skywalker was a Force-sensitive human male who served the Galactic
+        Republic as a Jedi Knight, and later the Galactic Empire as the
+        Sith Lord Darth Vader. Believed to have been conceived by the Force,
+        he was born to Shmi Skywalker into a life of slavery on the Outer Rim
+        world of Tatooine. At a young age, Skywalker was discovered by the Jedi Order,
+        who freed Anakin from slavery and brought the boy into their community;
+        hailing Skywalker as the Chosen One of Jedi prophecy, destined to defeat
+        the Sith and bring balance to the Force.</p>
+    </div>
+  </section>
+  <div class="col-md-12 well">
+    <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
+    <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.). </p>
+  </div>
+
 </div>
 
-  <section id="bholder">
-
-  <div id="bio">
-    <p>Anakin Skywalker was a Force-sensitive human male who served the Galactic
-      Republic as a Jedi Knight, and later the Galactic Empire as the
-      Sith Lord Darth Vader. Believed to have been conceived by the Force,
-      he was born to Shmi Skywalker into a life of slavery on the Outer Rim
-      world of Tatooine. At a young age, Skywalker was discovered by the Jedi Order,
-      who freed Anakin from slavery and brought the boy into their community;
-      hailing Skywalker as the Chosen One of Jedi prophecy, destined to defeat
-      the Sith and bring balance to the Force.</p>
-
-      <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
-      <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.). </p>
-  </div>
-</section>
 
 </body>
 </html>

@@ -1,0 +1,46 @@
+*{
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #888;
+  font-family: fantasy;
+  color: #444;
+}
+
+.well{
+  background-color: #222;
+  text-shadow: 1px 1px 1px white;
+}
+
+ul li {
+  color: maroon;
+}
+
+li a {
+  color: maroon;
+}
+
+#face {
+  width: 100%;
+  text-align: center;
+  background: url('Images/FullSizeRender (3).jpg') 100% fixed;
+  color: white;
+  text-shadow: 4px 4px 4px #428BCA;
+  padding-top: 80px;
+  margin-top: 60px;
+}
+#face img{
+  border: 2px solid #d9edf7;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: transform .2s;
+}
+
+
+/*.onlowdTest {
+  transform: rotate(8640deg);
+  /*, box-shadow 2s, border-radius 1s, src 1s,border 1s;*/
