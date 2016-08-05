@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,300);
 *{
 
 }
@@ -5,17 +6,18 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #999;
-  font-family: fantasy;
-  color: #444;
+  background: #B7EAEE;
+  font-family: 'Comfortaa', cursive;
+  color: #EAFEF9;
 }
 
 .jumbotron{
-  box-shadow: .5px 2px 20px white;
+  height: 55%;
+  box-shadow: .5px 2px 20px black;
 }
 .well{
-  background-color: #222;
-  text-shadow: 1px 1px 1px white;
+  background-color: #3D3D47;
+  box-shadow: .5px 2px 20px black;
 }
 
 ul li {
@@ -29,10 +31,10 @@ li a {
 #face {
   width: 100%;
   text-align: center;
-  background: url('profpic.jpg') fixed;
+  background: url('Images/IMG_3714.JPG') fixed no-repeat;
   color: white;
   text-shadow: 4px 4px 4px #222;
-  padding-top: 80px;
+  padding-top: 60px;
   margin-top: 60px;
 }
 #face img{
@@ -41,6 +43,13 @@ li a {
   height: 100px;
   width: 100px;
   transition: transform .2s;
+}
+#bio{
+  border-radius: 2.5px;
+  margin: 4% 0;
+
+  padding: 5px 20px;
+  background: url('Images/IMG_3714.JPG') 100% fixed;
 }
 
 
