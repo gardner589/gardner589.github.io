@@ -3,8 +3,10 @@ $(document).ready(function(){
   $('#content').toggle()
   $('#face h1').hide();
   $('#face p').hide();
-  $('#face h1').toggle(1050);
-  $('#face p').toggle(1050);
+  setTimeout(function(){
+    $('#face h1').toggle(1000)
+    $('#face p').toggle(1000)
+}, 1500);
   $('#about').click(function(){
     $('#content').toggle(1500)
   })

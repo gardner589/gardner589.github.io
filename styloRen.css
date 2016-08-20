@@ -31,7 +31,7 @@ li a {
 #face {
   width: 100%;
   text-align: center;
-  background: url('Images/IMG_3714.JPG') fixed no-repeat;
+  background: url('Images/IMG_3714.JPG') 100% fixed;
   color: white;
   text-shadow: 4px 4px 4px #222;
   padding-top: 60px;
