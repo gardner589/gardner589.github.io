@@ -2,64 +2,74 @@
 <html>
 <head>
   <title>ProTfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <script src="jquery-1.12.4.min.js"></script> -->
-    <!--<link rel="stylesheet" href="stylo.css"/>-->
-    <link rel="stylesheet" href="compnts/bootstrap/dist/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="stiles.css"/> -->
-    <link rel="stylesheet" href="styloRen.css"/>
-
-  <script src="compnts/jquery/dist/jquery.js"></script>
-  <script src="compnts/angular/angular.js"></script>
-  <script src="compnts/angular-animate/angular-animate.js"></script>
-  <script src="compnts/angular-route/angular-route.js"></script>
-  <script src="compnts/angular-resource/angular-resource.js"></script>
-  <script src="script.js"></script>
+  <script src="jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="master.css">
 </head>
-<body class="container">
-  <nav class="navbar-fixed-top navbar-inverse">
-    <ul class="nav navbar-nav">
-      <li class="pull-left" id="about"><a href="#bio">About</a></li>
-      <li class="pull-left"><a href="#">Past</a></li>
-      <li class="pull-right"><a href="#"> 5yrs</a></li>
-      <li class="pull-right"><a href="http://gardner589.github.io/ProjectOne" target="_blank">Skillz</a></li>
-    </ul>
-  </nav>
-
-  <section class="container-fluid jumbotron" id="face">
-    <header>
-      <!-- <img src="profpic.jpg" alt="My picure of my face"/> -->
-      <h1 >Christopher Gardner</h1>
-      <p>Developing Full-Stack Developer</p>
-    </header>
+<body>
+  <section id="face">
+      <img src="myFACE.jpg" alt="My picure of my face"/>
+      <h1 >Christopher T. Gardner</h1>
+      <h3>Full-Stack Developer</h3>
+      <div class="contact">
+        <div class="git">
+          <a target="_blank" href="https://github.com/gardner589">
+            <img src="github-logo.png" alt="github" />
+          </a>
+        </div>
+        <div class="linkd">
+          <a target="_blank" href="https://www.linkedin.com/in/christophertgardner">
+            <img src="linkedin.png" alt="linkdin" />
+          </a>
+        </div>
+        <div class="tweetr">
+          <a target="_blank" href="https://twitter.com/lordshirc">
+            <img src="twitter.png" alt="twit" />
+          </a>
+        </div>
+      </div>
   </section>
-
-
-
-<div class="container-fluid" id="content">
-  <div class="well" id="flexbox-background">
-    <p>The <code>Flexbox Layout</code> (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").</p>
-    <p><strong>Note:</strong> Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the <a href="http://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a> layout is intended for larger scale layouts.
+  <div class="navg8">
+        <div class="about">
+          <a href="#about-show">
+            <h3>About Me</h3>
+          </a>
+        </div>
+      <div class="projects">
+        <h3>Projects</h3>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+      </div>
   </div>
-  <section class="" id="bholder">
-    <div id="bio">
-      <p>Anakin Skywalker was a Force-sensitive human male who served the Galactic
-        Republic as a Jedi Knight, and later the Galactic Empire as the
-        Sith Lord Darth Vader. Believed to have been conceived by the Force,
-        he was born to Shmi Skywalker into a life of slavery on the Outer Rim
-        world of Tatooine. At a young age, Skywalker was discovered by the Jedi Order,
-        who freed Anakin from slavery and brought the boy into their community;
-        hailing Skywalker as the Chosen One of Jedi prophecy, destined to defeat
-        the Sith and bring balance to the Force.</p>
+  <div class="showing">
+    <div id='skills'>
+
     </div>
-  </section>
-  <div class=" well">
-    <p>The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.</p>
-    <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.). </p>
-  </div>
-
-</div>
-
-
+    <div id="about-show">
+      <p>
+        I am a creative and patient problem solver with experience in diverse environments for over 10 years. I'm fascinated by how things work and I look forward to discovering how new languages, technologies, frameworks, and stacks work when employed to solve problems.
+      </p>
+    </div>
+    <div id="projects">
+      <div class="memory">
+        <a target="_blank" href="http://gardner589.github.io/ProjectOne/">
+          <h2>Marvel v. Capcom Memory</h2>
+          <img src="memory.png" alt="MvC-memory" />
+        </a>
+      </div>
+      <div class="skillsBook">
+        <a target="_blank" href="https://skillz-book.herokuapp.com/skills">
+          <h2>SkillsBook</h2>
+          <img src="skillsBook.png" alt="skillsbook" />
+        </a>
+      </div>
+      <div class="congreddit">
+        <a target="_blank" href="https://gardner589.github.io/congreddit_angular_rebuild/#/legislators">
+          <h2>Congreddit</h2>
+          <img src="congreddit.png" alt="congreddit" />
+        </a>
+      </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
