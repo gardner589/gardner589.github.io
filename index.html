@@ -3,7 +3,6 @@
 <head>
   <title>ProTfolio</title>
   <script src="jquery-1.12.4.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="master.css">
 </head>
 <body>
@@ -11,17 +10,68 @@
       <img src="myFACE.jpg" alt="My picure of my face"/>
       <h1 >Christopher T. Gardner</h1>
       <h3>Full-Stack Developer</h3>
+      <div class="contact">
+        <div class="git">
+          <a target="_blank" href="https://github.com/gardner589">
+            <img src="github-logo.png" alt="github" />
+          </a>
+        </div>
+        <div class="linkd">
+          <a target="_blank" href="https://www.linkedin.com/in/christophertgardner">
+            <img src="linkedin.png" alt="linkdin" />
+          </a>
+        </div>
+        <div class="tweetr">
+          <a target="_blank" href="https://twitter.com/lordshirc">
+            <img src="twitter.png" alt="twit" />
+          </a>
+        </div>
+      </div>
   </section>
   <div class="navg8">
-    <div class="about">
-      <h3>About Me</h3>
+        <div class="about">
+          <a href="#about-show">
+            <h3>About Me</h3>
+          </a>
+        </div>
+      <div class="projects">
+        <h3>Projects</h3>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+      </div>
+  </div>
+  <div class="showing">
+    <div id='skills'>
+      
     </div>
-    <div class="projects">
-      <h3>Projects</h3>
+    <div id="about-show">
+      <p>
+        I am a creative and patient problem solver with experience in diverse environments for over 10 years. I'm fascinated by how things work and I look forward to discovering how new languages, technologies, frameworks, and stacks work when employed to solve problems.
+      </p>
     </div>
-    <div class="skills">
-      <h3>Skills</h3>
+    <div id="projects">
+      <div class="memory">
+        <a target="_blank" href="http://gardner589.github.io/ProjectOne/">
+          <h2>Marvel v. Capcom Memory</h2>
+          <img src="memory.png" alt="MvC-memory" />
+        </a>
+      </div>
+      <div class="skillsBook">
+        <a target="_blank" href="https://skillz-book.herokuapp.com/skills">
+          <h2>SkillsBook</h2>
+          <img src="skillsBook.png" alt="skillsbook" />
+        </a>
+      </div>
+      <div class="congreddit">
+        <a target="_blank" href="https://gardner589.github.io/congreddit_angular_rebuild/#/legislators">
+          <h2>Congreddit</h2>
+          <img src="congreddit.png" alt="congreddit" />
+        </a>
+      </div>
     </div>
-</div>
+
+  </div>
+<script src="script.js"></script>
 </body>
 </html>

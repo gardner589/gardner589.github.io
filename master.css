@@ -1,8 +1,88 @@
 body{
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, #eafef9, aqua);
+  height: 100%;
+  background: linear-gradient(to bottom, #eafef9, skyBlue) fixed;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+#face{
+  width: 90vw;
+  height: 30%;
+  padding-top: 10%;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  border-radius: 15px;
+  background: url('IMG_1263.JPG') fixed;
+  background-size: cover;
+}
+
+#face h1{
+  font-size: 4em;
+}
+
+#face img{
+  width: 20%;
+  border-radius: 50%;
+}
+
+.contact{
+  width: 90%;
+  height: 4vw;
+  padding: 3%;
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url('IMG_1263.JPG') fixed;
+  background-size: cover;
+}
+
+.contact img{
+  width: 15%;
+}
+
+.navg8{
+  background: url('IMG_1263.JPG') fixed;
+  background-size: cover;
+  margin-top: 2%;
+  width: 90%;
+  padding: 1%;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navg8 div>a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.navg8 div{
+  text-decoration: none;
+  color: inherit;
+  width: 30%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#skills{
+  width: 95%;
+  padding: 5%;
+  margin: 2%;
+  font-size: 2em;
+}
+
+.showing{
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,22 +90,37 @@ body{
   text-align: center;
 }
 
-#face{
-  width: 70vw;
-  height: 30vh;
-}
-
-#face img{
-  width: 20%;
-  border-radius: 15%;
-}
-
-.navg8{
-  background: #999;
+#about-show{
   margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 5%;
+  width: 80%;
+  height: 80%;
+  font-size: 30px;
+  box-shadow: 2px 2px 25px 5px white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#projects {
   width: 90%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  margin: 5%;
+  text-align: center;
+}
+
+#projects div{
+  margin: 10%;
+  box-shadow: 2px 2px 50px 10px white;
+  border-radius: 25px;
+}
+
+#projects a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#projects>div img{
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
 }
