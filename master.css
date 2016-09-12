@@ -14,22 +14,41 @@ body{
   align-items: center;
   text-align: center;
   background-size: cover;
+  margin: 0;
+  padding-top: 1em;
+  /*z-index: -1050;*/
+}
+
+.bg1{
+  position: absolute;
+  background: url('clouds.png') repeat;
+  z-index: -900000;
+  width: 100vw;
+  height: 200vh;
+  background-size: cover;
+  animation: bgMove 16s linear infinite;
+}
+@keyframes bgMove{
+	from { background-position: -1500px; }
+	to { background-position: 0px; }
 }
 
 #face{
-  width: 90vw;
-  height: 80vh;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  width: 95vw;
+  /*height: 95vh;*/
+  padding-top: 2%;
+  padding-bottom: 1%;
   border-right: 4px solid white;
   border-bottom: 4px solid white;
   border-radius: 15px;
   background: url('IMG_1263.JPG') fixed;
   background-size: cover;
+  text-align: center;
+  clear: both;
 }
 
 #face h1{
-  font-size: 4em;
+  font-size: 2.5em;
 }
 
 #face img{
@@ -41,7 +60,7 @@ body{
   width: 90%;
   height: 4vw;
   padding: 3%;
-  margin: 2%;
+  /*margin: 2%;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,9 +76,8 @@ body{
 .navg8{
   background: url('IMG_1263.JPG') fixed;
   background-size: cover;
-  margin-top: 2%;
-  width: 90%;
-  padding: 1%;
+  width: 95%;
+  margin: auto;
   display: flex;
   border-radius: 5px;
   flex-direction: row;
@@ -78,6 +96,7 @@ body{
   width: 30%;
   border: 1px solid white;
   border-radius: 5px;
+  height: 10%;
 }
 
 #skills{
@@ -91,10 +110,6 @@ body{
   align-items: center;
 }
 
-/*#skills p:nth-child(even){
-  color: blue;
-}*/
-
 .showing{
   width: 90%;
   display: flex;
@@ -105,8 +120,8 @@ body{
 }
 
 #about-show{
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding: 5%;
   width: 80%;
   height: 80%;
@@ -117,16 +132,15 @@ body{
 }
 
 #projects {
-  width: 90%;
-  margin: 5%;
-  text-align: center;
+  font-size: 1em;
+  box-shadow: 2px 2px 50px 10px white inset;
+  border-radius: 10px;
+  width: 90vw;
+  margin-top: 1em;
 }
 
 #projects div{
-  margin: 10%;
-  box-shadow: 2px 2px 50px 10px white inset;
   border-radius: 25px;
-  padding: 1em;
 }
 
 #projects a{
@@ -135,7 +149,8 @@ body{
 }
 
 #projects>div img{
-  width: 30vw;
-  height: 30vw;
+  width: 15em;
+  height:15em;
   border-radius: 50%;
+  margin: auto;
 }
