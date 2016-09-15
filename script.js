@@ -6,6 +6,11 @@ $(document).ready(function(){
       infinite: true
     })
 
+  $(window).scroll(function(){
+    $('#face').css('letter-spacing', $(this).scrollTop()/20+'px')
+    $('#face img').css('transform','rotate('+$(this).scrollTop()/2+'deg)')
+  })
+
   var skillsBlob = ['Javascript','jQuery','Ruby on Rails','AngularJS','React.js','Node.js','Express.js','PostgresSQL','AJAX','JSON','Git','Github','HTML5','CSS3','MongoDB','Bootstrap','Activerecord','mongoose ODM', 'Jasmine', 'Rspec', 'Selenium']
   // $('#about-show').toggle()
   // $('#projects').toggle()
