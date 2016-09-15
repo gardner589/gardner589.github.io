@@ -60,17 +60,15 @@ body{
   width: 90%;
   height: 4vw;
   padding: 3%;
-  /*margin: 2%;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url('IMG_1263.JPG') fixed;
-  background-size: cover;
 }
 
 .contact img{
   width: 15%;
+  box-shadow: 2px 2px 25px 15px lightBlue inset;
 }
 
 .navg8{

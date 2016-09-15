@@ -5,34 +5,26 @@ $(document).ready(function(){
       speed: 500,
       infinite: true
     })
-
   $(window).scroll(function(){
-    $('#face').css('letter-spacing', $(this).scrollTop()/20+'px')
-    $('#face img').css('transform','rotate('+$(this).scrollTop()/2+'deg)')
+    $('#face').css('letter-spacing', $(this).scrollTop()/40+'px')
+    $('#myFace').css('transform','rotate('+$(this).scrollTop()+'deg)')
+    $('.contact').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
   })
-
+  $('#face').mousemove(function(evt){
+    $('.navg8 div').css({
+    "margin-left": evt.clientX/30+"px",
+    "margin-right": evt.clientX/30+"px",
+    "margin-top": evt.clientY/-30+"px",
+    "margin-bottom": evt.clientY/30+"px"
+    })
+    $('.contact img').css({
+      width: evt.clientY/27+'%',
+      "margin-bottom": evt.clientY/27+'%',
+      "margin-left": evt.clientY/17+'%',
+      "margin-right": evt.clientY/17+'%'
+    })
+  })
   var skillsBlob = ['Javascript','jQuery','Ruby on Rails','AngularJS','React.js','Node.js','Express.js','PostgresSQL','AJAX','JSON','Git','Github','HTML5','CSS3','MongoDB','Bootstrap','Activerecord','mongoose ODM', 'Jasmine', 'Rspec', 'Selenium']
-  // $('#about-show').toggle()
-  // $('#projects').toggle()
-  // $('#skills').toggle()
-  // $('.about').click(function(){
-  //   $('#about-show').toggle(1000)
-  //   $('html, body').animate({
-  //     scrollTop: $("#about-show").offset().top
-  //   }, 2000);
-  // })
-  // $('.projects').click(function(){
-  //   $('#projects').toggle(1000)
-  //   $('html, body').animate({
-  //     scrollTop: $("#projects").offset().top
-  //   }, 2000);
-  // })
-  // $('.skills').click(function(){
-  //   $('#skills p').html('')
-  //   $('#skills').toggle(1000)
-  //   $('html, body').animate({
-  //     scrollTop: $("#skills").offset().top
-  //   }, 2000);
     x=0;
     addr = setInterval(function(){
         $('#skills p').append(' * '+skillsBlob[x])
@@ -41,5 +33,4 @@ $(document).ready(function(){
           clearInterval(addr)
         }
     },150)
-  // })
 })
