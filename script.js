@@ -6,9 +6,9 @@ $(document).ready(function(){
       infinite: true
     })
   $(window).scroll(function(){
-    $('#face').css('letter-spacing', $(this).scrollTop()/40+'px')
+    $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
     $('#myFace').css('transform','rotate('+$(this).scrollTop()+'deg)')
-    $('.contact').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
+    $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
   })
   $('#face').mousemove(function(evt){
     $('.navg8 div').css({
@@ -16,12 +16,6 @@ $(document).ready(function(){
     "margin-right": evt.clientX/30+"px",
     "margin-top": evt.clientY/-30+"px",
     "margin-bottom": evt.clientY/30+"px"
-    })
-    $('.contact img').css({
-      width: evt.clientY/27+'%',
-      "margin-bottom": evt.clientY/27+'%',
-      "margin-left": evt.clientY/17+'%',
-      "margin-right": evt.clientY/17+'%'
     })
   })
   var skillsBlob = ['Javascript','jQuery','Ruby on Rails','AngularJS','React.js','Node.js','Express.js','PostgresSQL','AJAX','JSON','Git','Github','HTML5','CSS3','MongoDB','Bootstrap','Activerecord','mongoose ODM', 'Jasmine', 'Rspec', 'Selenium']
