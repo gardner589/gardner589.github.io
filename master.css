@@ -72,8 +72,8 @@ body{
 }
 
 .navg8{
-  background: url('IMG_1263.JPG') fixed;
-  background-size: cover;
+  /*background: url('IMG_1263.JPG') fixed;
+  background-size: cover;*/
   width: 95%;
   margin: auto;
   display: flex;
