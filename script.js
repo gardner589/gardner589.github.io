@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $(".twitch").hide()
+
   $("#projects").slick({
       dots: true,
       speed: 500,
