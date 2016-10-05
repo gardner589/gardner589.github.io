@@ -8,11 +8,11 @@ $(document).ready(function(){
       infinite: true
     })
   $(window).scroll(function(){
-    $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
+    $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
     $('#myFace').css('transform','rotate('+$(this).scrollTop()+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     // var faceScroll = $('#face').scrollTop()
-    $('#face').css('background-position-y', $(this).scrollTop()/-5+'px')
+    $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
   })
   $('#face').mousemove(function(evt){
     $('.navg8 div').css({
