@@ -110,6 +110,11 @@ body{
   text-shadow: 1px 1px 2px skyBlue;
 }
 
+#skills h3{
+  border-bottom: .5px solid #ccc;
+  width: 100vw;
+}
+
 .showing{
   width: 90%;
   display: flex;
@@ -120,13 +125,13 @@ body{
 }
 
 #about-show{
-  /*margin-top: 1%;*/
-  /*margin-bottom: 10%;*/
-  /*padding: 5%;*/
-  /*width: 80%;*/
-  /*height: 80%;*/
+  margin-top: 2em;
+  margin-bottom: 10%;
+  padding: 5%;
+  width: 80%;
+  height: 80%;
   font-size: 30px;
-  /*box-shadow: 2px 2px 25px 5px white inset;*/
+  /*box-shadow: 2px 2px 300px 2px lightblue inset;*/
   border-radius: 15px;
   text-align: center;
   flex-basis: content;
@@ -162,4 +167,11 @@ body{
   height:15em;
   border-radius: .5em;
   margin: auto;
+}
+h1{
+  font-size: 2em;
+  margin: 2em;
+  border-bottom: .5px solid #ccc;
+  width: 100vw;
+
 }
