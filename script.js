@@ -1,15 +1,8 @@
 $(document).ready(function(){
 
   $(".twitch").hide()
-  $('#skills p').css('letter-spacing', '-15px')
-  // var skilletters = $('#skills p').css('letter-spacing')
+  // $('#skills p').css('letter-spacing', '-15px')
 
-
-  // $("#projects").slick({
-  //     dots: true,
-  //     speed: 500,
-  //     infinite: true
-  //   })
   $(window).scroll(function(){
     $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
     $('#myFace').css('transform','rotate('+$(this).scrollTop()+'deg)')
@@ -18,10 +11,11 @@ $(document).ready(function(){
     $('#skills p').css('letter-spacing', (-15) + $(this).scrollTop()/35+'px')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
     if($(window).scrollTop() >= $('#skills').offset().top){
-      $('#skills p').css('letter-spacing', '5px')
+      $('#skills p').css('letter-spacing', '0em')
     }
   })
   $('#face').mousemove(function(evt){
+
     $('.navg8 div').css({
     "margin-left": evt.clientX/30+"px",
     "margin-right": evt.clientX/30+"px",
@@ -33,10 +27,15 @@ $(document).ready(function(){
       'background-position-x': evt.clientX/-50+"px"
     })
   })
-  var skillsBlob = ['Javascript','jQuery','Ruby on Rails','AngularJS','React.js','Node.js','Express.js','PostgresSQL','AJAX','JSON','Git','Github','HTML5','CSS3','PHP','MongoDB','Bootstrap','Activerecord','mongoose ODM', 'Jasmine', 'Rspec', 'Selenium']
-      x=0;
-        while(x < skillsBlob.length){
-          $('#skills p').append(' * '+skillsBlob[x])
-          x++
-        }
+  $('.skillz img').hover(function(){
+    $(this).animate({height: '10.5em'}, 'slow')
+  }, function(){
+    $(this).animate({height: '10em'},'slow')
+  })
+  // var skillsBlob = ['Javascript','jQuery','Ruby on Rails','AngularJS','React.js','Node.js','Express.js','PHP','WordPress','PostgresSQL','AJAX','JSON','Github','HTML5','CSS3','CLI','MongoDB','Bootstrap', 'Jasmine', 'Rspec', 'Selenium']
+  //     x=0;
+  //       while(x < skillsBlob.length){
+  //         $('#skills p').append(' * '+skillsBlob[x])
+  //         x++
+  //       }
 })
