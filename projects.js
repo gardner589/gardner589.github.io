@@ -1,15 +1,3 @@
-
-// $('#projects>div img').mouseover(function(){
-//   var el = $(this)
-//   $(this).mousemove(function(evt){
-//     el.css({
-//     transform: 'rotateX('+evt.pageY*-3+'deg) rotateY('+evt.pageX*-3+'deg)',
-//     transition: 'transform 1s'
-//   })
-// })
-
-// })
-
 $('#projects div').css('letter-spacing', '-5px')
 
 $(window).scroll(function(){
