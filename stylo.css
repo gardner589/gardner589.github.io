@@ -1,0 +1,129 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+body{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000, #703) fixed;
+  color: white;
+  font-family: Oswald;
+  letter-spacing: .2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*background-size: cover;*/
+  margin: 0;
+  /*z-index: -1050;*/
+}
+
+
+#face{
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+  background: url('./images/IMG_4450.JPG') 100% fixed;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+.contact{
+  width: 90%;
+  height: 4vw;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact img{
+  width: 15%;
+  box-shadow: 2px 2px 25px 15px lightBlue inset;
+  border-radius: 50%;
+}
+#content{
+  width: 100vw;
+  height: 100vh;
+  font-size: 25px;
+  background: url('./images/IMG_4455.JPG') 100% fixed;
+  background-size: cover;
+  text-shadow: 1px 1px 2px black;
+  overflow: scroll;
+}
+#about-show{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-basis: content;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  font-size: .5em;
+  top: 0;
+}
+.nav a{
+  text-decoration: none;
+  color: inherit;
+}
+.nav div{
+  border: .5px solid #ccc;
+  width: 8em;
+  border-radius: 1em;
+}
+#myFace{
+  float: left;
+  width: 5em;
+  border-radius: 50%;
+}
+.skillz{
+  top: 3em;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skillz img{
+  height: 2em;
+}
+#projects {
+  /*font-size: 1em;*/
+  width: 100vw;
+  margin-top: 1em;
+  text-shadow: 1px 1px 2px skyBlue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  clear: both;
+}
+
+#projects div{
+  width: 20em;
+  font-size: 20px;
+}
+
+#projects a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#projects>div img{
+  width: 5em;
+  height:5em;
+  border-radius: .5em;
+  margin: auto;
+}
