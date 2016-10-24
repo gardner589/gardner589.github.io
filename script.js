@@ -17,11 +17,16 @@ $(document).ready(function(){
     $("#about-show").hide()
     $("#projects").show(1000)
   })
+  $("#face h1").click(function(){
+    $('html, body').animate({
+          scrollTop: $("#content").offset().top
+        }, 1000);
+  })
   $(window).scroll(function(){
-    $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
-    $('#myFace').css('transform','rotate('+($(this).scrollTop()+33)+'deg)')
+    // $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
+    $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
+    $('#myFace').css('transform','perspective(20000px) rotateY('+($(this).scrollTop())+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
-    $('#skills p').css('letter-spacing', (-15) + $(this).scrollTop()/35+'px')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
   })
   $('#face').mousemove(function(evt){
@@ -33,8 +38,7 @@ $(document).ready(function(){
     })
     $('#face').css({
       'background-position-y': evt.clientY/-50+"px",
-      'background-position-x': evt.clientX/-50+"px",
-      'letter-spacing': evt.clientX/evt.clientY+"px"
+      'background-position-x': evt.clientX/-50+"px"
     })
   })
   $('.skillz img').hover(function(){

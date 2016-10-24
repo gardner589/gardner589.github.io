@@ -14,8 +14,6 @@ body{
   text-align: center;
   margin: 0;
 }
-
-
 #face{
   width: 100vw;
   top: 0;
@@ -25,11 +23,14 @@ body{
   justify-content: center;
   align-items: center;
   padding-bottom: 1%;
-  background: url('./images/IMG_4450.JPG') 100% fixed;
+  background: url('./images/IMG_4450.JPG') 0 50% fixed;
   background-size: cover;
   text-align: center;
   font-size: 2em;
   text-shadow: 1px 1px 2px black;
+}
+#face h1:hover, h3:hover{
+  cursor: pointer;
 }
 .contact{
   width: 90%;
@@ -84,6 +85,7 @@ body{
   top: 5em;
   width: 5em;
   border-radius: 50%;
+
 }
 .skillz{
   margin: auto;
@@ -109,17 +111,14 @@ body{
   text-align: center;
   clear: both;
 }
-
 #projects div{
   width: 20em;
   font-size: 20px;
 }
-
 #projects a{
   text-decoration: none;
   color: inherit;
 }
-
 #projects>div img{
   width: 5em;
   height:5em;
