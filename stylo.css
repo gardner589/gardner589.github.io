@@ -12,9 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*background-size: cover;*/
   margin: 0;
-  /*z-index: -1050;*/
 }
 
 
@@ -100,7 +98,6 @@ body{
   height: 2em;
 }
 #projects {
-  /*font-size: 1em;*/
   width: 100vw;
   margin-top: 1em;
   text-shadow: 1px 1px 2px black;
