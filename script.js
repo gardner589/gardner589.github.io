@@ -17,7 +17,7 @@ $(document).ready(function(){
     $("#about-show").hide()
     $("#projects").show(1000)
   })
-  $("#face h1").click(function(){
+  $("#face h1, h3").click(function(){
     $('html, body').animate({
           scrollTop: $("#content").offset().top
         }, 1000);
