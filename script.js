@@ -23,9 +23,8 @@ $(document).ready(function(){
         }, 1000);
   })
   $(window).scroll(function(){
-    // $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
     $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
-    $('#myFace').css('transform','perspective(2000px) rotateY('+($(this).scrollTop()+860)+'deg)')
+    $('#myFace').css('transform','perspective(600px) rotateY('+($(this).scrollTop()+810)+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
   })
