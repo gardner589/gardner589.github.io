@@ -84,8 +84,9 @@ body{
 #myFace{
   top: 5em;
   width: 5em;
+  border: .5px solid white;
   border-radius: 50%;
-
+  box-shadow: 0 0 20px 1px black;
 }
 .skillz{
   margin: auto;
