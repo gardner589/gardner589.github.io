@@ -25,7 +25,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     // $('#face h1').css('letter-spacing', $(this).scrollTop()/50+'px')
     $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
-    $('#myFace').css('transform','perspective(20000px) rotateY('+($(this).scrollTop())+'deg)')
+    $('#myFace').css('transform','perspective(20000px) rotateY('+($(this).scrollTop()/.6)+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
   })
