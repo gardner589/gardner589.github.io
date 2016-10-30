@@ -2,6 +2,7 @@ $(document).ready(function(){
   $(".twitch").hide()
   $(".skillz").hide()
   $("#projects").hide()
+  $('.jobes').hide()
   $(".about").click(function(){
     $("#projects").hide()
     $(".skillz").hide()
@@ -17,6 +18,12 @@ $(document).ready(function(){
     $("#about-show").hide()
     $("#projects").show(1000)
   })
+  $(".findjobs").click(function(){
+    $("#about-show").hide()
+    $("#projects").hide()
+    $(".skillz").hide()
+    $(".jobes").show(1000)
+  })
   $("#face h1, h3").click(function(){
     $('html, body').animate({
           scrollTop: $("#content").offset().top
@@ -24,7 +31,7 @@ $(document).ready(function(){
   })
   $(window).scroll(function(){
     $('#face').css('letter-spacing', $(this).scrollTop()/30+'px')
-    $('#myFace').css('transform','perspective(600px) rotateY('+($(this).scrollTop()+810)+'deg)')
+    $('#myFace').css('transform','perspective(600px) rotateY('+($(this).scrollTop()+830)+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
   })
