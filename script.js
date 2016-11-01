@@ -34,6 +34,13 @@ $(document).ready(function(){
     $('#myFace').css('transform','perspective(600px) rotateY('+($(this).scrollTop()+830)+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
+    if (Math.floor($('#content').position().top) == $(window).scrollTop()) {
+      $('#myFace').css({
+        transform :'perspective(600px) rotateY(0deg)'
+      })
+    }
+    // console.log('window: '+$(this).scrollTop());
+    // console.log('content: '+$('#content').position().top);
   })
   $('#face').mousemove(function(evt){
     $('.navg8 div').css({
@@ -47,6 +54,7 @@ $(document).ready(function(){
       'background-position-x': evt.clientX/-50+"px"
     })
   })
+
   $('.skillz img').hover(function(){
     $(this).animate({height: '2.5em'}, 'slow')
   }, function(){
