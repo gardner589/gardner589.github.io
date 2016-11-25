@@ -34,7 +34,7 @@ $(document).ready(function(){
     $('#myFace').css('transform','perspective(600px) rotateY('+($(this).scrollTop()+830)+'deg)')
     $('.contact img').css('transform','rotate('+(-$(this).scrollTop())+'deg)')
     $('#face').css('background-position-y', $(this).scrollTop()/-4+'px')
-    if (Math.floor($('#content').position().top) == $(window).scrollTop()) {
+    if (Math.floor($('#content').position().top) <= $(window).scrollTop()) {
       $('#myFace').css({
         transform :'perspective(600px) rotateY(0deg)'
       })
