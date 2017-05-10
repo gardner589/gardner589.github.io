@@ -49,10 +49,7 @@ $(document).ready(function(){
     "margin-top": evt.clientY/-30+"px",
     "margin-bottom": evt.clientY/30+"px"
     })
-    $('#face').css({
-      'background-position-y': evt.clientY/-50+"px",
-      'background-position-x': evt.clientX/-50+"px"
-    })
+    $('#face').css({'background-position-x': evt.clientX/-50+"px"})
   })
 
   $('.skillz img').hover(function(){
