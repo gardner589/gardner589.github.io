@@ -1,0 +1,25 @@
+{
+  "name": "gardner589.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -o css scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gardner589/gardner589.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gardner589/gardner589.github.io/issues"
+  },
+  "homepage": "https://github.com/gardner589/gardner589.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0",
+    "vue": "^2.5.17",
+    "vue-material": "^1.0.0-beta-10.2"
+  }
+}
