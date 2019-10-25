@@ -1,13 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
+html {
+    overflow: hidden;
+}
+
 body{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #292929;
   /* background-color: linear-gradient(to bottom, #030, #000) fixed; */
-  background-image: url(images/taurus.svg);
+  /* background-image: url(images/taurus.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  /* background-size: 50rem; */
   color: white;
   font-family: Oswald;
   letter-spacing: .2em;
@@ -17,7 +22,18 @@ body{
   align-items: center;
   text-align: center;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+
+img {
+    z-index: 1;
+}
+
+#main > canvas{
+    position: absolute;
+}
+
 #face{
   width: 100vw;
   top: 0;
