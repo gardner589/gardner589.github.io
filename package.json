@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gardner589/gardner589.github.io#readme",
   "dependencies": {
-    "buefy": "^0.8.10",
+    "buefy": "^0.8.16",
     "node-sass": "^4.10.0"
   },
   "devDependencies": {
