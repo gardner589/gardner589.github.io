@@ -19,7 +19,7 @@
   "homepage": "https://github.com/gardner589/gardner589.github.io#readme",
   "dependencies": {
     "buefy": "^0.8.10",
-    "node-sass": "^4.10.0"
+    "node-sass": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
