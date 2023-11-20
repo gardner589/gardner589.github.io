@@ -7,7 +7,7 @@ html {
 body{
   width: 100vw;
   height: 100vh;
-  background-color: #292929;
+  background-color: #000000;
   color: white;
   font-family: Oswald;
   letter-spacing: .2em;
@@ -21,8 +21,11 @@ body{
   overflow: hidden;
 }
 
-img {
+#main > img {
+    width:35%;
     z-index: 1;
+    position:absolute;
+    border-radius:50%;
 }
 
 #main > canvas{
