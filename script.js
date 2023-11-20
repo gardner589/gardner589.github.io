@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   $(".twitch").hide()
   $(".skillz").hide()
   $("#projects").hide()
@@ -58,4 +58,10 @@ $(document).ready(function(){
   }, function(){
     $(this).animate({height: '2em'},'slow')
   })
+
+  setTimeout( () => {
+      particlesJS.load('main', './pjs-config2.json', function() {
+          console.log('callback - particles.js config loaded');
+      });
+  }, 1300)
 })

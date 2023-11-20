@@ -7,13 +7,7 @@ html {
 body{
   width: 100vw;
   height: 100vh;
-  background: black;
-  /* background-color: #292929; */
-  /* background-color: linear-gradient(to bottom, #030, #000) fixed; */
-  /* background-image: url(images/taurus.svg);
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* background-size: 50rem; */
+  background-color: #292929;
   color: white;
   font-family: Oswald;
   letter-spacing: .2em;
@@ -33,6 +27,7 @@ img {
 
 #main > canvas{
     position: absolute;
+    opacity: .5;
 }
 
 #face{
